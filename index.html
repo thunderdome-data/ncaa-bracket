@@ -1,0 +1,383 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+  <title>2013 NCAA Tournament Bracket</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="google" value="notranslate" />
+  <meta http-equiv="Content-Language" content="en" />
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/miso.ds.deps.min.0.4.1.js"></script>
+  
+  <link href="css/bracket.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="thetitle">
+    <p>2013 NCAA<br /> Tournament Bracket<p>
+    <p class="instruct">Click the teams to advance to next round<p>
+    <div id="printbtn">Print Bracket</div>
+  </div>
+
+  <div id="r1" class="rlabel"></div>
+  <div id="r2" class="rlabel"></div>
+  <div id="r3" class="rlabel"></div>
+  <div id="r4" class="rlabel"></div>
+
+  <div id="col1">
+    <div id="c1s1" class="slot" data-col="1" data-game="1"></div>
+    <div id="c1s2" class="slot" data-col="1" data-game="1"></div>
+    <hr align="left"/>
+
+    <div id="c1s3" class="slot" data-col="1" data-game="2"></div>
+    <div id="c1s4"class="slot" data-col="1" data-game="2"></div>
+    <hr align="left"/>
+
+    <div id="c1s5"class="slot" data-col="1" data-game="3"></div>
+    <div id="c1s6"class="slot" data-col="1" data-game="3"></div>
+    <hr align="left"/>
+
+    <div id="c1s7" class="slot" data-col="1" data-game="4"></div>
+    <div id="c1s8" class="slot" data-col="1" data-game="4"></div>
+    <hr align="left"/>
+
+    <div id="c1s9" class="slot" data-col="1" data-game="5"></div>
+    <div id="c1s10" class="slot" data-col="1" data-game="5"></div>
+    <hr align="left"/>
+
+    <div id="c1s11" class="slot" data-col="1" data-game="6"></div>
+    <div id="c1s12" class="slot" data-col="1" data-game="6"></div>
+    <hr align="left"/>
+
+    <div id="c1s13" class="slot" data-col="1" data-game="7"></div>
+    <div id="c1s14" class="slot" data-col="1" data-game="7"></div>
+    <hr align="left"/>
+
+    <div id="c1s15" class="slot" data-col="1" data-game="8"></div>
+    <div id="c1s16" class="slot" data-col="1" data-game="8"></div>
+    
+
+    <div class="spacer15"></div>
+
+    <div id="c1s17" class="slot" data-col="1" data-game="9"></div>
+    <div id="c1s18" class="slot" data-col="1" data-game="9"></div>
+    <hr align="left"/>
+
+    <div id="c1s19" class="slot" data-col="1" data-game="10"></div>
+    <div id="c1s20" class="slot" data-col="1" data-game="10"></div>
+    <hr align="left"/>
+
+    <div id="c1s21" class="slot" data-col="1" data-game="11"></div>
+    <div id="c1s22" class="slot" data-col="1" data-game="11"></div>
+    <hr align="left"/>
+
+    <div id="c1s23" class="slot" data-col="1" data-game="12"></div>
+    <div id="c1s24" class="slot" data-col="1" data-game="12"></div>
+    <hr align="left"/>
+
+    <div id="c1s25" class="slot" data-col="1" data-game="13"></div>
+    <div id="c1s26" class="slot" data-col="1" data-game="13"></div>
+    <hr align="left"/>
+
+    <div id="c1s27" class="slot" data-col="1" data-game="14"></div>
+    <div id="c1s28" class="slot" data-col="1" data-game="14"></div>
+    <hr align="left"/>
+
+    <div id="c1s29" class="slot" data-col="1" data-game="15"></div>
+    <div id="c1s30" class="slot" data-col="1" data-game="15"></div>
+    <hr align="left"/>
+
+    <div id="c1s31" class="slot" data-col="1" data-game="16"></div>
+    <div id="c1s32" class="slot" data-col="1" data-game="16"></div>  
+  </div>
+    
+  <div id="col2">
+    <div class="vliner">
+      <div class="slot c2" id="c2s1" data-col="2" data-game="1"></div>
+      <div class="slot c2" id="c2s2" data-col="2" data-game="1"></div>
+    </div>
+    <div class="vliner">
+      <div class="slot c2" id="c2s3" data-col="2" data-game="2"></div>
+      <div class="slot c2" id="c2s4" data-col="2" data-game="2"></div>
+    </div>
+    <div class="vliner">
+      <div class="slot c2" id="c2s5" data-col="2" data-game="3"></div>
+      <div class="slot c2" id="c2s6" data-col="2" data-game="3"></div>
+    </div>
+    <div class="vliner">
+      <div class="slot c2" id="c2s7" data-col="2" data-game="4"></div>
+      <div class="slot c2" id="c2s8" data-col="2" data-game="4"></div>
+    </div>
+
+    <div class="spacer2"></div>
+
+    <div class="vliner">
+      <div class="slot c2" id="c2s9" data-col="2" data-game="5"></div>
+      <div class="slot c2" id="c2s10" data-col="2" data-game="5"></div>
+    </div>
+    <div class="vliner">
+      <div class="slot c2" id="c2s11" data-col="2" data-game="6"></div>
+      <div class="slot c2" id="c2s12" data-col="2" data-game="6"></div>
+    </div>
+    <div class="vliner">
+      <div class="slot c2" id="c2s13" data-col="2" data-game="7"></div>
+      <div class="slot c2" id="c2s14" data-col="2" data-game="7"></div>
+    </div>
+    <div class="vliner">
+      <div class="slot c2" id="c2s15" data-col="2" data-game="8"></div>
+      <div class="slot c2" id="c2s16" data-col="2" data-game="8"></div>
+    </div>
+  </div>
+
+  <div id="col3">
+    <div class="vliner">
+      <div class="slot c3" id="c3s1" data-col="3" data-game="1"></div>
+      <div class="slot c3" id="c3s2" data-col="3" data-game="1"></div>
+    </div>
+    <div class="vliner">
+      <div class="slot c3" id="c3s3" data-col="3" data-game="2"></div>
+      <div class="slot c3" id="c3s4" data-col="3" data-game="2"></div>
+    </div>
+    
+    <div class="vliner">
+      <div class="slot c3b" id="c3s5" data-col="3" data-game="3"></div>
+      <div class="slot c3b" id="c3s6" data-col="3" data-game="3"></div>
+    </div>
+    <div class="vliner">
+      <div class="slot c3b" id="c3s7" data-col="3" data-game="4"></div>
+      <div class="slot c3b" id="c3s8" data-col="3" data-game="4"></div>
+    </div>
+
+  </div>
+
+  <div id="col4">
+    <div class="vliner">
+      <div class="slot c4" id="c4s1" data-col="4" data-game="1"></div>
+      <div class="slot c4" id="c4s2" data-col="4" data-game="1"></div>
+    </div>
+    <div class="spacer15"></div>
+    <div class="vliner">
+      <div class="slot c4" id="c4s3" data-col="4" data-game="2"></div>
+      <div class="slot c4" id="c4s4" data-col="4" data-game="2"></div>
+    </div>
+  </div>
+
+  <div id="col5">
+    <div class="vliner">
+      <div class="slot c5" id="c5s1" data-col="5" data-game="1"></div>
+      <div class="spacer180"></div>
+      <div class="slot c5" id="c5s2" data-col="5" data-game="1"></div>
+    </div>
+  </div>
+
+  <div id="col6">
+      <div class="slot c6" id="c6s1" data-col="6" data-game="1"></div>
+      <div class="slot c6 winner" id="c6s0" data-col="6" data-game="0"></div>
+      <div class="slot c6" id="c6s2" data-col="6" data-game="2"></div>
+  </div>
+
+  <div id="col7">
+   <div class="vlinel">
+     <div class="slot c7" id="c7s1" data-col="7" data-game="2"></div>
+     <div class="spacer180"></div>
+      <div class="slot c7" id="c7s2" data-col="7" data-game="2"></div>
+    </div>
+  </div>
+
+  <div id="col8">
+    <div class="vlinel">
+      <div class="slot c8" id="c8s1" data-col="8" data-game="1"></div>
+      <div class="slot c8" id="c8s2" data-col="8" data-game="1"></div>
+    </div>
+    <div class="spacer15"></div>
+    <div class="vlinel">
+      <div class="slot c8" id="c8s3" data-col="8" data-game="2"></div>
+      <div class="slot c8" id="c8s4" data-col="8" data-game="2"></div>
+    </div>
+  </div>
+
+  <div id="col9">
+    <div class="vlinel">
+      <div class="slot c9" id="c9s1" data-col="9" data-game="1"></div>
+      <div class="slot c9" id="c9s2" data-col="9" data-game="1"></div>
+    </div>
+    <div class="vlinel">
+      <div class="slot c9" id="c9s3" data-col="9" data-game="2"></div>
+      <div class="slot c9" id="c9s4" data-col="9" data-game="2"></div>
+    </div>
+
+    <div class="vlinel">
+      <div class="slot c9b" id="c9s5" data-col="9" data-game="3"></div>
+      <div class="slot c9b" id="c9s6" data-col="9" data-game="3"></div>
+    </div>
+    <div class="vlinel">
+      <div class="slot c9b" id="c9s7" data-col="9" data-game="4"></div>
+      <div class="slot c9b" id="c9s8" data-col="9" data-game="4"></div>
+    </div>
+  </div>
+
+  <div id="col10">
+    <div class="vlinel">
+      <div class="slot c10" id="c10s1" data-col="10" data-game="1"></div>
+      <div class="slot c10" id="c10s2" data-col="10" data-game="1"></div>
+    </div>
+    <div class="vlinel">
+      <div class="slot c10" id="c10s3" data-col="10" data-game="2"></div>
+      <div class="slot c10" id="c10s4" data-col="10" data-game="2"></div>
+    </div>
+    <div class="vlinel">
+      <div class="slot c10" id="c10s5" data-col="10" data-game="3"></div>
+      <div class="slot c10" id="c10s6" data-col="10" data-game="3"></div>
+    </div>
+    <div class="vlinel">
+      <div class="slot c10" id="c10s7" data-col="10" data-game="4"></div>
+      <div class="slot c10" id="c10s8" data-col="10" data-game="4"></div>
+    </div>
+
+    <div class="spacer2"></div>
+
+    <div class="vlinel">
+      <div class="slot c10" id="c10s9" data-col="10" data-game="5"></div>
+      <div class="slot c10" id="c10s10" data-col="10" data-game="5"></div>
+    </div>
+    <div class="vlinel">
+      <div class="slot c10" id="c10s11" data-col="10" data-game="6"></div>
+      <div class="slot c10" id="c10s12" data-col="10" data-game="6"></div>
+    </div>
+    <div class="vlinel">
+      <div class="slot c10" id="c10s13" data-col="10" data-game="7"></div>
+      <div class="slot c10" id="c10s14" data-col="10" data-game="7"></div>
+    </div>
+    <div class="vlinel">
+      <div class="slot c10" id="c10s15" data-col="10" data-game="8"></div>
+      <div class="slot c10" id="c10s16" data-col="10" data-game="8"></div>
+    </div>
+  </div>
+
+  <div id="col11">
+    <div id="c11s1" class="slot" data-col="11" data-game="1"></div>
+    <div id="c11s2" class="slot" data-col="11" data-game="1"></div>
+    <hr align="left"/>
+
+    <div id="c11s3" class="slot" data-col="11" data-game="2"></div>
+    <div id="c11s4" class="slot" data-col="11" data-game="2"></div>
+    <hr align="left"/>
+
+    <div id="c11s5" class="slot" data-col="11" data-game="3"></div>
+    <div id="c11s6" class="slot" data-col="11" data-game="3"></div>
+    <hr align="left"/>
+
+    <div id="c11s7" class="slot" data-col="11" data-game="4"></div>
+    <div id="c11s8" class="slot" data-col="11" data-game="4"></div>
+    <hr align="left"/>
+
+    <div id="c11s9" class="slot" data-col="11" data-game="5"></div>
+    <div id="c11s10" class="slot" data-col="11" data-game="5"></div>
+    <hr align="left"/>
+
+    <div id="c11s11" class="slot" data-col="11" data-game="6"></div>
+    <div id="c11s12" class="slot" data-col="11" data-game="6"></div>
+    <hr align="left"/>
+
+    <div id="c11s13" class="slot" data-col="11" data-game="7"></div>
+    <div id="c11s14" class="slot" data-col="11" data-game="7"></div>
+    <hr align="left"/>
+
+    <div id="c11s15" class="slot" data-col="11" data-game="8"></div>
+    <div id="c11s16" class="slot" data-col="11" data-game="8"></div>
+    
+
+    <div class="spacer15"></div>
+
+    <div id="c11s17" class="slot" data-col="11" data-game="9"></div>
+    <div id="c11s18" class="slot" data-col="11" data-game="9"></div>
+    <hr align="left"/>
+
+    <div id="c11s19" class="slot" data-col="11" data-game="10"></div>
+    <div id="c11s20" class="slot" data-col="11" data-game="10"></div>
+    <hr align="left"/>
+
+    <div id="c11s21" class="slot" data-col="11" data-game="11"></div>
+    <div id="c11s22" class="slot" data-col="11" data-game="11"></div>
+    <hr align="left"/>
+
+    <div id="c11s23" class="slot" data-col="11" data-game="12"></div>
+    <div id="c11s24" class="slot" data-col="11" data-game="12"></div>
+    <hr align="left"/>
+
+    <div id="c11s25" class="slot" data-col="11" data-game="13"></div>
+    <div id="c11s26" class="slot" data-col="11" data-game="13"></div>
+    <hr align="left"/>
+
+    <div id="c11s27" class="slot" data-col="11" data-game="14"></div>
+    <div id="c11s28" class="slot" data-col="11" data-game="14"></div>
+    <hr align="left"/>
+
+    <div id="c11s29" class="slot" data-col="11" data-game="15"></div>
+    <div id="c11s30" class="slot" data-col="11" data-game="15"></div>
+    <hr align="left"/>
+
+    <div id="c11s31" class="slot" data-col="11" data-game="16"></div>
+    <div id="c11s32" class="slot" data-col="11" data-game="16"></div> 
+  </div>
+
+  <div style="clear:both"></div>
+  <div id="firstfour">
+    <p class="title">The First Four</p>
+    
+    <div class="ffmodule" style="margin-left: 50px">
+      <p id="fflabel1" class="subtitle"></p>
+      <div class="ffcol1">
+        <div id="c12s1" class="slotnohover" data-col="12" data-game="1"></div>
+        <div id="c12s2" class="slotnohover" data-col="12" data-game="1"></div>
+      </div>
+      <div class="ffcol2">
+        <div id="c12s9" class="slotnohover" id="c12s1"></div>
+      </div>
+    </div>
+
+    <div class="ffmodule">
+      <p id="fflabel2" class="subtitle"></p>
+      <div class="ffcol1">
+        <div id="c12s3" class="slotnohover" data-col="13" data-game="2"></div>
+        <div id="c12s4" class="slotnohover" data-col="13" data-game="2"></div>
+      </div>
+      <div class="ffcol2">
+        <div id="c12s10" class="slotnohover" id="c13s2"></div>
+      </div>
+    </div>
+
+    <div class="ffmodule">
+      <p id="fflabel3" class="subtitle"></p>
+      <div class="ffcol1">
+        <div id="c12s5" class="slotnohover" data-col="14" data-game="3"></div>
+        <div id="c12s6" class="slotnohover" data-col="14" data-game="3"></div>
+      </div>
+      <div class="ffcol2">
+        <div id="c12s11" class="slotnohover" id="c14s3"></div>
+      </div>
+    </div>
+
+    <div class="ffmodule" style="border-right: none">
+      <p id="fflabel4" class="subtitle"></p>
+      <div class="ffcol1">
+        <div id="c12s7" class="slotnohover" data-col="15" data-game="4"></div>
+        <div id="c12s8" class="slotnohover" data-col="15" data-game="4"></div>
+      </div>
+      <div class="ffcol2">
+        <div id="c12s12" class="slotnohover" id="c15s4"></div>
+      </div>
+    </div>
+
+  </div>
+  
+  <script src="js/bracket.js"></script>
+
+  
+
+</body>
+
+
+</html>
