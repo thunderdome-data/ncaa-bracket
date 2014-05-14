@@ -4,7 +4,7 @@ ncaa-bracket
 What is this?
 -------------
 
-Interactive and printable bracket for NCAA Basketball Tournament.  This is not responsive, so feel free to branch this off an make it so!
+Interactive and printable bracket for NCAA Basketball Tournament.  This is not responsive, so feel free to branch this off an make it so! Demo: http://data.digitalfirstmedia.com/ncaa2013/bracketadvisor/interactive-bracket/
 
 Credits
 ---------
