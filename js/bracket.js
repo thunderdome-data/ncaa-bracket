@@ -20,11 +20,10 @@ $(document).ready(function(){
       ds.fetch({ 
         success : function() {
           //console.log(ds.column("thetalk").data);
-          console.log("So say we all!");
           parseData();
         },
         error : function() {
-          console.log("What the frak?");
+          console.error("ds.fetch failed");
         }
       });
     }
