@@ -5,10 +5,15 @@ var sheetCount = 1;
 
 $(document).ready(function(){
 
+
+window.setTimeout(loaditall, 2000);
+function loaditall()
+{
   loadData(sheetCount);
   //POPULATE DATA FROM GOOGLE SPREADSHEET
   function loadData(which) {
    
+console.log(which);
       //LOAD DATA WITH MISO
       ds = new Miso.Dataset({
           importer : Miso.Dataset.Importers.GoogleSpreadsheet,
@@ -23,7 +28,7 @@ $(document).ready(function(){
           parseData();
         },
         error : function() {
-          console.error("ds.fetch failed");
+          console.error("ds.fetch failed", ds);
         }
       });
     }
@@ -44,7 +49,8 @@ $(document).ready(function(){
       }
       //console.log(allData);
       
-      if (sheetCount < 6) {
+      //if (sheetCount < 6) {
+      if (sheetCount < 5) {
         sheetCount ++;
         loadData(sheetCount);
       } else {
@@ -156,5 +162,5 @@ $(document).ready(function(){
     $("#printbtn").click(function() {
       window.print();
     });
-
+} // end function loaditall
 }); // end document.ready block
