@@ -6,14 +6,10 @@ var sheetCount = 1;
 $(document).ready(function(){
 
 
-window.setTimeout(loaditall, 2000);
-function loaditall()
-{
   loadData(sheetCount);
   //POPULATE DATA FROM GOOGLE SPREADSHEET
   function loadData(which) {
    
-console.log(which);
       //LOAD DATA WITH MISO
       ds = new Miso.Dataset({
           importer : Miso.Dataset.Importers.GoogleSpreadsheet,
@@ -162,5 +158,4 @@ console.log(which);
     $("#printbtn").click(function() {
       window.print();
     });
-} // end function loaditall
 }); // end document.ready block
