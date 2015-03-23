@@ -57,7 +57,7 @@ $(document).ready(function(){
     function showData() {
     //console.log(allData.length, ds.column("id").data.length);
       for (var k=0; k<allData.length; k++) {
-        console.log(k, allData[k][0].seed, allData[k][0].myid, allData[k][0].name);
+        //console.log(k, allData[k][0].seed, allData[k][0].myid, allData[k][0].name);
         if (k <= 31) {
            $("#c1" + "s" + (k + 1)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
            continue;
@@ -108,97 +108,73 @@ $(document).ready(function(){
         // *******************************
         // ROUND OF 32
         // *******************************
-        if ( allData[84][0].seed !== null )
-        {
-            if (k > 83 && k < 92 ) {
-                $("#c2" + "s" + (k - 83)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
-                continue;
-            }
+        if (k > 83 && k < 92 ) {
+            if ( allData[k][0].seed === null ) { continue; }
+            $("#c2" + "s" + (k - 83)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+            continue;
         }
-        if ( allData[106][0].seed !== null )
-        {
-            if (k > 105 && k < 114 ) {
-                $("#c2" + "s" + (k - 97)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
-                continue;
-            }
+        if (k > 105 && k < 114 ) {
+            if ( allData[k][0].seed === null ) { continue; }
+            $("#c2" + "s" + (k - 97)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+            continue;
         }
-        if ( allData[125][0].seed !== null )
-        {
-            if (k > 124 && k < 133 ) {
-                $("#c10" + "s" + (k - 124)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
-                continue;
-            }
+        if (k > 124 && k < 133 ) {
+            if ( allData[k][0].seed === null ) { continue; }
+            $("#c10" + "s" + (k - 124)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+            continue;
         }
-        if ( allData[144][0].seed !== null )
-        {
-            if (k > 143 && k < 152 ) {
-                $("#c10" + "s" + (k - 134)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
-                continue;
-            }
+        if (k > 143 && k < 152 ) {
+            if ( allData[k][0].seed === null ) { continue; }
+            $("#c10" + "s" + (k - 134)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+            continue;
         }
 
         // **************** 
         // SWEET 16
         // **************** 
-        if ( allData[92][0].seed !== null )
-        {
-            if (k > 91 && k < 100 ) {
-                $("#c3" + "s" + (k - 91)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
-                continue;
-            }
+        if (k > 91 && k < 100 ) {
+            if ( allData[k][0].seed === null ) { continue; }
+            $("#c3" + "s" + (k - 91)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+            continue;
         }
-        if ( allData[114][0].seed !== null )
-        {
-            if (k > 113 && k < 122 ) {
-                $("#c3" + "s" + (k - 105)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
-                continue;
-            }
+        if (k > 113 && k < 122 ) {
+            if ( allData[k][0].seed === null ) { continue; }
+            $("#c3" + "s" + (k - 105)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+            continue;
         }
-        if ( allData[133][0].seed !== null )
-        {
-            if (k > 132 && k < 141 ) {
-                $("#c9" + "s" + (k - 133)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
-                continue;
-            }
+        if (k > 132 && k < 141 ) {
+            if ( allData[k][0].seed === null ) { continue; }
+            $("#c9" + "s" + (k - 133)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+            continue;
         }
-        if ( allData[152][0].seed !== null )
-        {
-            if (k > 151 && k < 160 ) {
-                $("#c9" + "s" + (k - 139)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
-                continue;
-            }
+        if (k > 151 && k < 160 ) {
+            if ( allData[k][0].seed === null ) { continue; }
+            $("#c9" + "s" + (k - 139)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+            continue;
         }
 
         // ********
         // ELITE 8
         // ********
-        if ( allData[100][0].seed !== null )
-        {
-            if (k == 100 || k == 101 ) {
-                $("#c4" + "s" + (k - 99)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
-                continue;
-            }
+        if (k == 100 || k == 101 ) {
+            if ( allData[k][0].seed === null ) { continue; }
+            $("#c4" + "s" + (k - 99)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+            continue;
         }
-        if ( allData[122][0].seed !== null )
-        {
-            if (k == 122 || k == 123 ) {
-                $("#c4" + "s" + (k - 119)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
-                continue;
-            }
+        if (k == 122 || k == 123 ) {
+            if ( allData[k][0].seed === null ) { continue; }
+            $("#c4" + "s" + (k - 119)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+            continue;
         }
-        if ( allData[133][0].seed !== null )
-        {
-            if (k == 141 || k == 142 ) {
-                $("#c8" + "s" + (k - 140)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
-                continue;
-            }
+        if (k == 141 || k == 142 ) {
+            if ( allData[k][0].seed === null ) { continue; }
+            $("#c8" + "s" + (k - 140)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+            continue;
         }
-        if ( allData[152][0].seed !== null )
-        {
-            if (k == 160 || k == 161 ) {
-                $("#c8" + "s" + (k - 157)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
-                continue;
-            }
+        if (k == 160 || k == 161 ) {
+            if ( allData[k][0].seed === null ) { continue; }
+            $("#c8" + "s" + (k - 157)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+            continue;
         }
 
         // ****
