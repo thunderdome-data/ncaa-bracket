@@ -60,43 +60,118 @@ $(document).ready(function(){
         console.log(k, allData[k][0].seed, allData[k][0].myid, allData[k][0].name);
         if (k <= 31) {
            $("#c1" + "s" + (k + 1)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+           continue;
         }
         if (k >= 32 && k <= 63) {
            $("#c11" + "s" + (k - 31)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+           continue;
         } 
         if (k >= 63 && k <= 75) {
           $("#c12" + "s" + (k - 63)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+           continue;
         }
         if (k == 76) {
           $("#r1").text(allData[k][0].name);
+           continue;
         }
         if (k == 77) {
           $("#r2").text(allData[k][0].name);
+           continue;
         }
         if (k == 78) {
           $("#r3").text(allData[k][0].name);
+           continue;
         }
         if (k == 79) {
           $("#r4").text(allData[k][0].name);
+           continue;
         }
 
         if (k == 80) {
           $("#fflabel1").text(allData[k][0].name);
+           continue;
         }
         if (k == 81) {
           $("#fflabel2").text(allData[k][0].name);
+           continue;
         }
         if (k == 82) {
           $("#fflabel3").text(allData[k][0].name);
+           continue;
         }
         if (k == 83) {
           $("#fflabel4").text(allData[k][0].name);
+           continue;
         }
+
         // WINNER BRACKET EDITS
         // *******************************
         // ROUND OF 32
         // *******************************
-        
+        if ( allData[84][0].seed !== null )
+        {
+            if (k > 83 && k < 92 ) {
+                $("#c2" + "s" + (k - 83)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+                continue;
+            }
+        }
+        if ( allData[106][0].seed !== null )
+        {
+            if (k > 105 && k < 114 ) {
+                $("#c2" + "s" + (k - 97)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+                continue;
+            }
+        }
+        if ( allData[125][0].seed !== null )
+        {
+            if (k > 124 && k < 133 ) {
+                $("#c10" + "s" + (k - 124)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+                continue;
+            }
+        }
+        if ( allData[144][0].seed !== null )
+        {
+            if (k > 143 && k < 152 ) {
+                $("#c10" + "s" + (k - 134)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+                continue;
+            }
+        }
+
+        // **************** 
+        // SWEET 16
+        // **************** 
+        if ( allData[92][0].seed !== null )
+        {
+            if (k > 91 && k < 100 ) {
+                $("#c3" + "s" + (k - 91)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+                continue;
+            }
+        }
+        if ( allData[114][0].seed !== null )
+        {
+            if (k > 113 && k < 122 ) {
+                $("#c3" + "s" + (k - 105)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+                continue;
+            }
+        }
+        if ( allData[133][0].seed !== null )
+        {
+            if (k > 132 && k < 141 ) {
+                $("#c9" + "s" + (k - 133)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+                continue;
+            }
+        }
+        if ( allData[152][0].seed !== null )
+        {
+            if (k > 151 && k < 160 ) {
+                $("#c9" + "s" + (k - 139)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+                continue;
+            }
+        }
+
+        // ********
+        // ELITE 8
+        // ********
 
       }
     }
