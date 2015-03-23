@@ -31,7 +31,7 @@ $(document).ready(function(){
 
     function parseData() {
 
-      var $len = ds.column("seed").data.length;
+      var $len = ds.column("id").data.length;
       totalEntries = $len;
       
       //LOOP THRU GOOGLE DATA AND PUT INTO OBJECT
@@ -55,7 +55,9 @@ $(document).ready(function(){
     }
 
     function showData() {
+    console.log(allData.length, ds.column("id").data.length);
       for (var k=0; k<allData.length; k++) {
+        console.log(k, allData[k][0].seed, allData[k][0].myid, allData[k][0].name);
         if (k <= 31) {
            $("#c1" + "s" + (k + 1)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
         }
@@ -90,6 +92,11 @@ $(document).ready(function(){
         if (k == 83) {
           $("#fflabel4").text(allData[k][0].name);
         }
+        // WINNER BRACKET EDITS
+        // *******************************
+        // ROUND OF 32
+        // *******************************
+        
 
       }
     }
