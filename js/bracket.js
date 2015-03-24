@@ -205,6 +205,28 @@ $(document).ready(function(){
             continue;
         }
 
+        // **
+        // CHAMPIONSHIP
+        // **
+        if (k == 99 ) {
+            if ( allData[k][0].seed === null ) { continue; }
+            $("#c6s1").text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+            continue;
+        }
+        if (k == 100 ) {
+            if ( allData[k][0].seed === null ) { continue; }
+            $("#c6s2").text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+            continue;
+        }
+
+        // **
+        // CHAMPION
+        // **
+        if (k == 101 ) {
+            if ( allData[k][0].seed === null ) { continue; }
+            $("#c6s0").text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+            continue;
+        }
       }
     }
 
