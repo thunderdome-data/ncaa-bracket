@@ -104,7 +104,8 @@ $(document).ready(function(){
            continue;
         }
 
-        // WINNER BRACKET EDITS
+        // WINNER BRACKET LOGIC 
+        // (this is optional: if you just want to publish the first round you can just publish the first round.)
         // *******************************
         // ROUND OF 32
         // *******************************
@@ -139,17 +140,17 @@ $(document).ready(function(){
         }
         if (k > 109 && k < 114 ) {
             if ( allData[k][0].seed === null ) { continue; }
-            $("#c3" + "s" + (k - 101)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+            $("#c3" + "s" + (k - 105)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
             continue;
         }
         if (k > 124 && k < 129 ) {
             if ( allData[k][0].seed === null ) { continue; }
-            $("#c9" + "s" + (k - 125)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+            $("#c9" + "s" + (k - 124)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
             continue;
         }
         if (k > 139 && k < 148 ) {
             if ( allData[k][0].seed === null ) { continue; }
-            $("#c9" + "s" + (k - 127)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+            $("#c9" + "s" + (k - 135)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
             continue;
         }
 
