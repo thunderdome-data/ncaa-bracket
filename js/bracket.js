@@ -126,7 +126,7 @@ $(document).ready(function(){
         }
         if (k > 131 && k < 140 ) {
             if ( allData[k][0].seed === null ) { continue; }
-            $("#c10" + "s" + (k - 122)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+            $("#c10" + "s" + (k - 123)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
             continue;
         }
 
