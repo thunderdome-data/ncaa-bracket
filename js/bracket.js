@@ -106,6 +106,9 @@ $(document).ready(function(){
 
         // WINNER BRACKET LOGIC 
         // (this is optional: if you just want to publish the first round you can just publish the first round.)
+        // Note: the if ( allData[k][0].seed === null ) { continue; } code is what makes sure we don't publish
+        // any slot's data before we have data in the spreadsheet for that round and slot.
+
         // *******************************
         // ROUND OF 32
         // *******************************
@@ -181,6 +184,26 @@ $(document).ready(function(){
         // ****
         // FINAL FOUR
         // ****
+        if (k == 98 ) {
+            if ( allData[k][0].seed === null ) { continue; }
+            $("#c5s1").text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+            continue;
+        }
+        if (k == 116 ) {
+            if ( allData[k][0].seed === null ) { continue; }
+            $("#c5s2").text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+            continue;
+        }
+        if (k == 131 ) {
+            if ( allData[k][0].seed === null ) { continue; }
+            $("#c7s1").text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+            continue;
+        }
+        if (k == 146 ) {
+            if ( allData[k][0].seed === null ) { continue; }
+            $("#c7s2").text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+            continue;
+        }
 
       }
     }
