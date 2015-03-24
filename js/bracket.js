@@ -113,50 +113,50 @@ $(document).ready(function(){
             $("#c2" + "s" + (k - 83)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
             continue;
         }
-        if (k > 105 && k < 114 ) {
+        if (k > 101 && k < 110 ) {
             if ( allData[k][0].seed === null ) { continue; }
-            $("#c2" + "s" + (k - 97)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+            $("#c2" + "s" + (k - 93)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
             continue;
         }
-        if (k > 124 && k < 133 ) {
+        if (k > 116 && k < 125 ) {
             if ( allData[k][0].seed === null ) { continue; }
-            $("#c10" + "s" + (k - 124)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+            $("#c10" + "s" + (k - 116)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
             continue;
         }
-        if (k > 143 && k < 152 ) {
+        if (k > 131 && k < 140 ) {
             if ( allData[k][0].seed === null ) { continue; }
-            $("#c10" + "s" + (k - 134)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+            $("#c10" + "s" + (k - 122)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
             continue;
         }
 
         // **************** 
         // SWEET 16
         // **************** 
-        if (k > 91 && k < 100 ) {
+        if (k > 91 && k < 96 ) {
             if ( allData[k][0].seed === null ) { continue; }
             $("#c3" + "s" + (k - 91)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
             continue;
         }
-        if (k > 113 && k < 122 ) {
+        if (k > 109 && k < 114 ) {
             if ( allData[k][0].seed === null ) { continue; }
-            $("#c3" + "s" + (k - 105)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+            $("#c3" + "s" + (k - 101)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
             continue;
         }
-        if (k > 132 && k < 141 ) {
+        if (k > 124 && k < 129 ) {
             if ( allData[k][0].seed === null ) { continue; }
-            $("#c9" + "s" + (k - 133)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+            $("#c9" + "s" + (k - 125)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
             continue;
         }
-        if (k > 151 && k < 160 ) {
+        if (k > 139 && k < 148 ) {
             if ( allData[k][0].seed === null ) { continue; }
-            $("#c9" + "s" + (k - 139)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+            $("#c9" + "s" + (k - 127)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
             continue;
         }
 
         // ********
         // ELITE 8
         // ********
-        if (k == 100 || k == 101 ) {
+        if (k == 96 || k == 97 ) {
             if ( allData[k][0].seed === null ) { continue; }
             $("#c4" + "s" + (k - 99)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
             continue;
