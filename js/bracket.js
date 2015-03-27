@@ -162,22 +162,22 @@ $(document).ready(function(){
         // ********
         if (k == 96 || k == 97 ) {
             if ( allData[k][0].seed === null ) { continue; }
-            $("#c4" + "s" + (k - 99)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+            $("#c4" + "s" + (k - 95)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
             continue;
         }
-        if (k == 122 || k == 123 ) {
+        if (k == 114 || k == 115 ) {
             if ( allData[k][0].seed === null ) { continue; }
-            $("#c4" + "s" + (k - 119)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+            $("#c4" + "s" + (k - 111)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
             continue;
         }
-        if (k == 141 || k == 142 ) {
+        if (k == 129 || k == 130 ) {
             if ( allData[k][0].seed === null ) { continue; }
-            $("#c8" + "s" + (k - 140)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+            $("#c8" + "s" + (k - 128)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
             continue;
         }
-        if (k == 160 || k == 161 ) {
+        if (k == 144 || k == 145 ) {
             if ( allData[k][0].seed === null ) { continue; }
-            $("#c8" + "s" + (k - 157)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
+            $("#c8" + "s" + (k - 141)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
             continue;
         }
 
