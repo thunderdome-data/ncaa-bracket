@@ -10,10 +10,10 @@ This is not responsive, but please feel free to fork this and make it so. We acc
 
 ![interbrack](screenshots/interbrack.png)
 
-Credits
+Contributors
 ---------
-
-Nelson Hsu
+* [Nelson Hsu](https://github.com/hsunelson)
+* [Joe Murphy](https://github.com/freejoe76)
 
 Assumptions
 -----------
