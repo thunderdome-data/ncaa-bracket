@@ -151,7 +151,7 @@ $(document).ready(function(){
             $("#c9" + "s" + (k - 124)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
             continue;
         }
-        if (k > 139 && k < 148 ) {
+        if (k > 139 && k < 144 ) {
             if ( allData[k][0].seed === null ) { continue; }
             $("#c9" + "s" + (k - 135)).text("(" + allData[k][0].seed + ") " + allData[k][0].name);
             continue;
